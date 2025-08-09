@@ -1,39 +1,52 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# TalkWithVoid 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: GOKU
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: sreyas - cucek
+- Member 2: gopika - cucek
+
 
 ### Project Description
-[2-3 lines about what your project does]
+
+Chaotic SnarkBot is a ridiculous chatbot that replies in an unserious, sarcastic tone with random emojis. It can detect distress in a message and temporarily switch to being wholesome and supportive.
+
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Serious AI assistants are boring — they either give you textbook answers or pretend to be your therapist. Where’s the chaos? Where’s the sarcasm?
+
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+We built an AI chatbot that talks like it’s had too much coffee, sprinkles random emojis everywhere, and sometimes thinks it’s a potato. But if you seem sad, it drops the jokes and offers support.
+
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+For Software:
+
+Languages: JavaScript, HTML, CSS
+
+Frameworks: None (vanilla frontend)
+
+Libraries: None (custom JS + Fetch API)
+
+Tools: Netlify (hosting), OpenRouter API (DeepSeek model), VS Code, GitHub
+
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+Laptop (capable of running a browser)
+
+Internet connection (preferably chaotic Wi-Fi)
+
+Coffee mug for debugging motivation
+
 
 ### Implementation
 For Software:
@@ -56,18 +69,6 @@ For Software:
 ![Screenshot3](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
 # Build Photos
 ![Description](./p.png)
@@ -81,16 +82,16 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
+![Project Video](https://github.com/user-attachments/assets/65e5fd81-f322-42df-9aa6-6adba3585a95)
 *Explain what the video demonstrates*
 
 # Additional Demos
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- [Name 1]: Sreyas S
+- [Name 2]: Gopika K
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
