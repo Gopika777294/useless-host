@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snarky Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Floating emoji animation */
+    .emoji {
+      position: fixed;
+      bottom: -50px;
+      font-size: 2rem;
+      animation: floatUp 8s linear infinite;
+      pointer-events: none;
+      z-index: 0;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-120vh) scale(1.5); opacity: 0; }
+    }
+    body {
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+      padding: 20px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 500px;
+      width: 100%;
+      z-index: 1;
+      position: relative;
+      border: 4px dashed rgba(255,255,255,0.6);
+      backdrop-filter: blur(10px);
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 2.2rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .controls {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    #clearBtn {
+      background: #ff6f91;
+      border: none;
+      padding: 8px 15px;
+      color: white;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    .chat {
+      background: rgba(255,255,255,0.3);
+      padding: 15px;
+      border-radius: 15px;
+      height: 300px;
+      overflow-y: auto;
+      border: 2px solid rgba(255,255,255,0.5);
+    }
+    .chat-form {
+      display: flex;
+      margin-top: 10px;
+    }
+    #userInput {
+      flex: 1;
+      padding: 10px;
+      border-radius: 10px 0 0 10px;
+      border: none;
+      outline: none;
+    }
+    #sendBtn {
+      background: #6a82fb;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 0 10px 10px 0;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .bubble.bot {
+      background: #fff;
+      border-radius: 10px;
+      padding: 5px 10px;
+      margin: 5px 0;
+    }
+    .bubble.me {
+      background: #d1ffd6;
+      border-radius: 10px;
+      padding: 5px 10px;
+      margin: 5px 0;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating emojis -->
+  <div class="emoji" style="left: 5%;">🍎</div>
+  <div class="emoji" style="left: 15%; animation-delay: 1s;">🍌</div>
+  <div class="emoji" style="left: 25%; animation-delay: 2s;">🍓</div>
+  <div class="emoji" style="left: 35%; animation-delay: 3s;">🍍</div>
+  <div class="emoji" style="left: 45%; animation-delay: 4s;">🍇</div>
+  <div class="emoji" style="left: 55%; animation-delay: 5s;">🥭</div>
+  <div class="emoji" style="left: 65%; animation-delay: 6s;">🍉</div>
+  <div class="emoji" style="left: 75%; animation-delay: 7s;">🍒</div>
+  <div class="emoji" style="left: 85%; animation-delay: 8s;">🍑</div>
+  <div class="emoji" style="left: 95%; animation-delay: 9s;">🍋</div>
+
+  <main class="container">
+    <h1>KIRA BOT 🤖</h1>
+    <div class="controls">
+      <button id="clearBtn">Clear chat</button>
+    </div>
+    <section id="chat" class="chat" aria-live="polite"></section>
+    <form id="chatForm" class="chat-form" onsubmit="return false;">
+      <input id="userInput" autocomplete="off" placeholder="Say something..." />
+      <button id="sendBtn">Send</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
